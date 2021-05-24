@@ -1,0 +1,611 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+	<title>Symphony</title>
+	<link rel="icon" type="image/jpg" href="images/title.jpg" style="border-radius:100%">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/player.css">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Dancing+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"/>
+	<script src="js/logout.js"></script>
+  </head>
+  <style media="screen">
+  .crl{
+    color: white;
+  }
+  .p{
+     color: #d6efc7;
+     letter-spacing: 3.5px;
+  }
+  .footer-icon{
+     color:#d6efc7 ;
+      padding: 5px;
+  }
+  .heart{
+  color: red;
+  }
+  .footerdiv{
+   color: black;
+  }
+  .l{
+  text-decoration: none;
+  color:#888;
+  }
+  .l:hover{
+  text-decoration: none;
+  }
+  </style>
+  <body>
+
+
+
+<section id=grad>
+
+
+ <section id="first-section">
+
+
+
+
+  <!-- navbar------------------------------------------------------------------- -->
+  <div class="container-fluid">
+
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-sticky-top" id="nav">
+        <a class="navbar-brand" href="#">   <img>
+         </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Browse</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Languages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#tamil">Tamil</a>
+                <a class="dropdown-item" href="#hindi">Hindi</a>
+                <a class="dropdown-item" href="#telugu">Telugu</a>
+                <a class="dropdown-item" href="#malayalam">Malayalam</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#english">English</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">News</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 " id="searchbox">
+            <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn  nb" type="submit"><i class="fas fa-search"></i></button>
+            <a href="logout.php"><button type="button"class="btn nb "name="button" onclick="logout()">Logout</button></a>
+            <!-- <a href="sign-up.html"><button type="button"class="btn nb "name="button">Sign-up</button></a>  -->
+          </form>
+        </div>
+      </nav>
+
+</div>
+
+
+
+ <div class="container-1">
+    <div class="sidebar">
+        <h2> </h2>
+
+        <ul>
+            <!-- <li><a href="#" title="Home"><i class="fas fa-home"></i></a></li> -->
+            <li><a href="profile.php" title="Profile"><i class="fas fa-user"></i></a></li>
+            <li><a href="#playlist" title="Songs"><i class="fa fa-music" aria-hidden="true"></i></a></li>
+            <li><a href="#artist" title="Artists"><i class="fas fa-user-check"></i></a></li>
+            <li><a href="phpChatBot\index.php" title="Chatbot"><i class="fas fa-sms"></i></a></li>
+            <li><a href="#footer" title="About Us"><i class="fas fa-address-book"></i></a></li>
+        </ul>
+
+    </div>
+  </div>
+
+
+
+  </section>
+
+  </section>
+<section id="trending-news">
+
+   <br> <h1 id="news">Trending Stories</h1>
+<div class="accordion">
+  <ul>
+    <li tabindex="1">
+      <div>
+        <div class="btn">
+          <div class="number">1</div>
+          <div class="content">
+            <h2>A.R.RAHMAN</h2>
+            <p>AR Rahman And Shreya Ghoshal's Mesmerising Collaborations For Tamil Films</p>
+            <a data-fancybox data-src="#cs" href="https://www.republicworld.com/entertainment-news/music/ar-rahman-and-shreya-ghoshals-mesmerizing-collaborations-for-tamil.html">Read more</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li tabindex="2">
+      <div>
+        <div class="btn">
+          <div class="number">2</div>
+          <div class="content">
+          <h2>S.P.BALA SUBRAMANIAN</h2>
+            <p>Singer SP Balasubrahmanyam is no more</p>
+            <a data-fancybox data-src="#cbs" href="https://indianexpress.com/article/entertainment/singer-spb-extremely-critical-hospital-6609791/">Read more</a>
+        </div>
+        </div>
+      </div>
+    </li>
+    <li tabindex="3">
+      <div>
+        <div class="btn">
+          <div class="number">3</div>
+          <div class="content">
+          <h2>ARJIT SINGH</h2>
+          <p>Arijit Singh’s Latest Hindi Songs To Listen</p>
+             <a data-fancybox data-src="#eh" href="https://www.iwmbuzz.com/music/snippets-music/arijit-singhs-latest-hindi-songs-listen/2020/10/13">Read more</a>
+        </div>
+        </div>
+      </div>
+    </li>
+    <li tabindex="4">
+      <div>
+        <div class="btn">
+          <div class="number">4</div>
+          <div class="content">
+          <h2>SHREYA GOSHAL</h2>
+          <p>Check Out Latest Telugu Music Video Song 'Vasthunnaa Vachchesthunnaa' (Cover) Sung By Shreya Ghoshal And Amit Trivedi Featuring Praveen Medidi And Sapna</p>
+            <a data-fancybox data-src="#wd" href="https://timesofindia.indiatimes.com/videos/entertainment/music/telugu/check-out-latest-telugu-music-video-song-vasthunnaa-vachchesthunnaa-cover-sung-by-shreya-ghoshal-and-amit-trivedi-featuring-praveen-medidi-and-sapna/videoshow/78632991.cms">Read more</a>
+        </div>
+        </div>
+      </div>
+    </li>
+    <li tabindex="5">
+      <div>
+        <div class="btn">
+          <div class="number">5</div>
+          <div class="content">
+          <h2>ED SHEERAN</h2>
+          <p>Ed Sheeran's manager on royal duels, Russell Crowe's snakes and a secret new album</p>
+            <a data-fancybox data-src="#pe" href="https://www.telegraph.co.uk/music/artists/ed-sheerans-manager-stars-duel-princess-beatrice-secret-new/">Read more</a>
+        </div>
+        </div>
+      </div>
+    </li>
+    <li tabindex="6">
+      <div>
+        <div class="btn">
+          <div class="number">6</div>
+          <div class="content">
+          <h2>SALENA GOMEZ</h2>
+          <p>Selena Gomez and Blackpink to Release New Single</p>
+            <a data-fancybox data-src="#ml" href="https://www.vulture.com/2020/08/selena-gomez-and-blackpink-to-release-new-single.html#:~:text=%E2%80%9CSo%20SO%20excited%20to%20announce,Instagram%20also%20shared%20the%20announcement.">Read more</a>
+        </div>
+        </div>
+      </div>
+    </li>
+     <li tabindex="7">
+      <div>
+        <div class="btn">
+          <div class="number">7</div>
+          <div class="content">
+          <h2>SID SRI RAM</h2>
+          <p>Nishabdham Movie Back To Back Video Songs</p>
+            <a data-fancybox data-src="#cl" href="https://www.thehindu.com/entertainment/music/jwniib/article30388944.ece/alternates/FREE_435/hy23-sidsriram">Read more</a>
+        </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div style="display: none;" id="cs">
+	<h2>1. Computer Science</h2>
+	<p>Todas as empresas possuem dados próprios, mesmo que não explorados. O
+primeiro passo da jornada é utilizar as informações que sua organização já possui. A
+coleta de dados reúne as informações de todos os sistemas dentro da empresa, sejam
+eles vindos de ERPs, CRMs, Sistemas diversos, planilhas ou qualquer outro tipo de
+dado, organizamos os pipelines de entrada para um repositório confiável.</p>
+</div>
+<div style="display: none;" id="cbs">
+	<h2>2. Cyber Security</h2>
+	<p> This is same as first ossuem dados próprios, mesmo que não explorados. O
+primeiro passo da jornada é utilizar as informações que sua organização já possui. A
+coleta de dados reúne as informações de todos os sistemas dentro da empresa, sejam
+eles vindos de ERPs, CRMs, Sistemas diversos, planilhas ou qualquer outro tipo de
+dado, organizamos os pipelines de entrada para um repositório confiável.</p>
+</div>
+<div style="display: none;" id="eh">
+	<h2>3. Ethical Hacker</h2>
+	<p> This is same as first ossuem dados próprios, mesmo que não explorados. O
+primeiro passo da jornada é utilizar as informações que sua organização já possui. A
+coleta de dados reúne as informações de todos os sistemas dentro da empresa, sejam
+eles vindos de ERPs, CRMs, Sistemas diversos, planilhas ou qualquer outro tipo de
+dado, organizamos os pipelines de entrada para um repositório confiável.</p>
+</div>
+<div style="display: none;" id="wd">
+	<h2>4. Web Developer</h2>
+	<p> This is same as first ossuem dados próprios, mesmo que não explorados. O
+primeiro passo da jornada é utilizar as informações que sua organização já possui. A
+coleta de dados reúne as informações de todos os sistemas dentro da empresa, sejam
+eles vindos de ERPs, CRMs, Sistemas diversos, planilhas ou qualquer outro tipo de
+dado, organizamos os pipelines de entrada para um repositório confiável.</p>
+</div>
+<div style="display: none;" id="pe">
+	<h2>5. Python Enthusiast</h2>
+	<p> This is same as first ossuem dados próprios, mesmo que não explorados. O
+primeiro passo da jornada é utilizar as informações que sua organização já possui. A
+coleta de dados reúne as informações de todos os sistemas dentro da empresa, sejam
+eles vindos de ERPs, CRMs, Sistemas diversos, planilhas ou qualquer outro tipo de
+dado, organizamos os pipelines de entrada para um repositório confiável.</p>
+</div>
+<div style="display: none;" id="ml">
+	<h2>6. Machine Learning Enthusiast</h2>
+	<p> This is same as first ossuem dados próprios, mesmo que não explorados. O
+primeiro passo da jornada é utilizar as informações que sua organização já possui. A
+coleta de dados reúne as informações de todos os sistemas dentro da empresa, sejam
+eles vindos de ERPs, CRMs, Sistemas diversos, planilhas ou qualquer outro tipo de
+dado, organizamos os pipelines de entrada para um repositório confiável.</p>
+</div>
+<div style="display: none;" id="cl">
+	<h2>7. Code Lover</h2>
+	<p> This is same as first ossuem dados próprios, mesmo que não explorados. O
+primeiro passo da jornada é utilizar as informações que sua organização já possui. A
+coleta de dados reúne as informações de todos os sistemas dentro da empresa, sejam
+eles vindos de ERPs, CRMs, Sistemas diversos, planilhas ou qualquer outro tipo de
+dado, organizamos os pipelines de entrada para um repositório confiável.</p>
+</div>
+<div style="display: none;" id="ml">
+	<h2>6. Machine Learning Enthusiast</h2>
+	<p> This is same as first ossuem dados próprios, mesmo que não explorados. O
+primeiro passo da jornada é utilizar as informações que sua organização já possui. A
+coleta de dados reúne as informações de todos os sistemas dentro da empresa, sejam
+eles vindos de ERPs, CRMs, Sistemas diversos, planilhas ou qualquer outro tipo de
+dado, organizamos os pipelines de entrada para um repositório confiável.</p>
+</div>
+<div style="display: none;" id="8l">
+	<h2>7. Code Lover</h2>
+	<p> This is same as first ossuem dados próprios, mesmo que não explorados. O
+primeiro passo da jornada é utilizar as informações que sua organização já possui. A
+coleta de dados reúne as informações de todos os sistemas dentro da empresa, sejam
+eles vindos de ERPs, CRMs, Sistemas diversos, planilhas ou qualquer outro tipo de
+dado, organizamos os pipelines de entrada para um repositório confiável.</p>
+</div><br><br><br><br><br><br><br><br>
+</section>
+
+<section id="playlist">
+  <div class="main">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-12">
+  				<h3 id="tamil">Tamil</h3>
+  			</div>
+  			<div class="col-md-3">
+  				<a href="javascript:void();" class="album-poster" data-switch="0">
+  					<img class="abc" src="https://daddykool.com/Photo/418462581414" alt="">
+  				</a>
+  				<h4>Anirudh Ravichandran</h4>
+				  <p>Dharala Prabhu - 2020</p>
+				  <button class="lbtn"><a  href="lyrics/dharala.html" style="text-decoration:none; color:black;" target="_blank">lyrics</a></button>
+  			</div>
+  			<div class="col-md-3">
+  				<a href="#" class="album-poster" data-switch="1">
+  					<img class="abc" src="https://a10.gaanacdn.com/gn_img/song/kGxbnw0Ky4/xbneEX6aWy/size_xxl_1581596667.webp" alt="">
+  				</a>
+  				<h4>G.V.Prakash kumar</h4>
+				  <p>Veyyon Silli</p>
+				  <button class="lbtn"><a href="lyrics/veiyonsilli.html" style="text-decoration:none; color:black;" target="_blank">lyrics</a></button>
+  			</div>
+  			<div class="col-md-3">
+  				<a href="#" class="album-poster" data-switch="2">
+  					<img class="abc" src="https://a10.gaanacdn.com/images/song/56/30978756/crop_480x480_1594902321.jpg" alt="">
+  				</a>
+  				<h4>Anirudh Ravichandran</h4>
+				  <p>Chellamma - 2020</p>
+				  <button class="lbtn"><a href="lyrics/Chellamma.html" style="text-decoration:none; color:black;" target="_blank">lyrics</a></button>
+  			</div>
+
+  			<div class="col-md-3">
+  				<a href="#" class="album-poster" data-switch="3">
+  					<img class="abc" src="images\sirithal.jpg" alt="">
+  				</a>
+  				<h4>Hip Hop Tamizha</h4>
+				  <p>Breakup Song - 2019</p>
+				  <button class="lbtn"><a href="lyrics/Breakup Song.html"   style="text-decoration:none; color:black;" target="_blank">lyrics</a></button>
+			  </div>
+			  <div class="col-md-12">
+				<h3 id="hindi">Hindi</h3>
+			</div>
+  			<div class="col-md-3">
+  				<a href="#" class="album-poster" data-switch="4">
+  					<img class="abc" src="https://sm.askmen.com/askmen_in/photo/default/article-355-thumbnail_q16e.jpg" alt="">
+  				</a>
+  				<h4>Sachet Tandon</h4>
+				  <p> Bekhayali- 2019</p>
+				  <button class="lbtn"><a href="lyrics/Bekhayali.html" style="text-decoration:none; color:black;" target="_blank">lyrics</a></button>
+  			</div>
+  			<div class="col-md-3">
+  				<a href="#" class="album-poster" data-switch="5">
+  					<img class="abc" src="https://m.media-amazon.com/images/M/MV5BY2Y1M2Y0YWEtN2FlNS00ODkwLWJhN2ItNTA0YTkzZWI4NjJhXkEyXkFqcGdeQXVyMTA5NzIyMDY5._V1_.jpg" alt="">
+  				</a>
+  				<h4>Jubin Nautiyal</h4>
+				  <p>Tum hi aana-2019</p>
+				  <button class="lbtn"><a href="lyrics/Tum hi aana.html" style="text-decoration:none; color:black;" target="_blank">lyrics</a></button>
+  			</div>
+  			<div class="col-md-3">
+  				<a href="#" class="album-poster" data-switch="6">
+  					<img class="abc" src="https://ilidawaves.weebly.com/uploads/1/2/3/9/123934915/570965492.jpg" alt="">
+  				</a>
+  				<h4>Arjith Singh,Neeti Mohan</h4>
+				  <p>First Class - 2019</p>
+				  <button class="lbtn"><a href="lyrics/First Class.html" style="text-decoration:none; color:black;" target="_blank">lyrics</a></button>
+  			</div>
+
+        <div class="col-md-3">
+  				<a href="#" class="album-poster" data-switch="7">
+  					<img class="abc" src="https://i.kfs.io/album/global/67931450,0v1/fit/500x500.jpg" alt="">
+  				</a>
+  				<h4>Arjith Singh</h4>
+				  <p>Tum hi ho - 2013</p>
+				  <button class="lbtn"><a href="lyrics/Tum hi ho.html" style="text-decoration:none; color:black;"target="_blank">lyrics</a></button>
+		</div>
+		<div class="col-md-12">
+			<h3 id="telugu">Telugu</h3>
+		</div>
+        <div class="col-md-3">
+  				<a href="#" class="album-poster" data-switch="8" >
+  					<img class="abc"src="https://a10.gaanacdn.com/images/song/44/25488344/crop_480x480_1549985145.jpg" alt="">
+  				</a>
+  				<h4>Sid Sriram</h4>
+				  <p>Inthena Inthena- 2019</p>
+				  <button class="lbtn"><a href="lyrics/Inthena Inthena.html" style="text-decoration:none; color:black;" target="_blank">lyrics</a></button>
+        </div>
+        <div class="col-md-3">
+  				<a href="#" class="album-poster"  data-switch="9">
+  					<img class="abc"src="https://a10.gaanacdn.com/images/playlists/66/34134366/crop_480x480_1562151729_34134366.jpg" alt="">
+  				</a>
+  				<h4>Sid Sriram</h4>
+				  <p>Maate vinadhuga - 2018</p>
+				  <button class="lbtn"><a href="lyrics/Maate vinadhuga.html" style="text-decoration:none; color:black;"  target="_blank">lyrics</a></button>
+        </div>
+        <div class="col-md-3">
+  				<a href="#" class="album-poster"  data-switch="10">
+  					<img class="abc"src="topulesopodi.PNG" alt="">
+  				</a>
+  				<h4>Sagar,Geetha Madhuri</h4>
+				  <p>Top lesi poddi - 2013</p>
+				  <button class="lbtn"><a href="lyrics/Top lesi poddi.html"  style="text-decoration:none; color:black;" target="_blank">lyrics</a></button>
+        </div>
+        <div class="col-md-3">
+  				<a href="#" class="album-poster"  data-switch="11">
+  					<img class="abc"src="kadalale.PNG" alt="">
+  				</a>
+  				<h4>Sid Sriram</h4>
+				  <p>kadallale - 2019</p>
+				  <button class="lbtn"><a href="lyrics/kadallale.html" style="text-decoration:none; color:black;" target="_blank">lyrics</a></button>
+        </div>
+		<!-- Malayalam -->
+		<div class="col-md-12">
+			<h3 id="malayalam">Malayalam</h3>
+		</div>
+        <div class="col-md-3">
+  				<a href="#" class="album-poster"  data-switch="12">
+  					<img class="abc"src="https://a10.gaanacdn.com/images/albums/51/1573751/crop_480x480_1573751.jpg" alt="">
+  				</a>
+  				<h4>Shakthisree Gopalan , Muhammed Maqbool Mansoor</h4>
+				  <p>Pularikalo - 2015</p>
+				  <button class="lbtn"><a href="lyrics/Pularikalo.html"  style="text-decoration:none; color:black;" target="_blank">lyrics</a></button>
+        </div>
+        <div class="col-md-3">
+  				<a href="#" class="album-poster"  data-switch="13">
+  					<img class="abc"src="https://a10.gaanacdn.com/gn_img/albums/4Z9bqZoKyQ/Z9bqyZ21by/size_xxl_1580214908.webp" alt="">
+  				</a>
+  				<h4>Sid Sriram</h4>
+				  <p>Uyire - 2020</p>
+				  <button class="lbtn"><a href="lyrics/Uyire.html" style="text-decoration:none; color:black;" target="_blank">lyrics</a></button>
+        </div>
+        <div class="col-md-3">
+  				<a href="#" class="album-poster"  data-switch="14">
+  					<img class="abc"src="https://a10.gaanacdn.com/images/song/75/23346975/crop_480x480_1523367355.jpg" alt="">
+  				</a>
+  				<h4>K S Harisankar, Shreya Ghoshal</h4>
+				  <p>Jeevamshamayi - 2018</p>
+				  <button class="lbtn"><a href="lyrics/Jeevamshamayi.html" style="text-decoration:none; color:black;" target="_blank">lyrics</a></button>
+        </div>
+        <div class="col-md-3">
+  				<a href="#" class="album-poster"  data-switch="15">
+  					<img class="abc"src="https://media-images.mio.to/by_artist/V/Vijay%20Yesudas/Malare%20%28From%20Premam%29%20%282015%29/Art-350.jpg" alt="">
+  				</a>
+  				<h4>Vijay Yesudas</h4>
+				  <p>Malare - 2015</p>
+				  <button class="lbtn"><a href="lyrics/Malare.html" style="text-decoration:none; color:black;" target="_blank">lyrics</a></button>
+        </div>
+		<!-- english -->
+		<div class="col-md-12">
+			<h3 id="english">English</h3>
+		</div>
+        <div class="col-md-3">
+  				<a href="#" class="album-poster"  data-switch="16">
+  					<img class="abc"src="https://a10.gaanacdn.com/images/albums/54/1854954/crop_480x480_1854954.jpg" alt="">
+  				</a>
+  				<h4>Alan Walker</h4>
+				  <p>Alone - 2018</p>
+				  <button class="lbtn"><a href="lyrics/Alone.html" style="text-decoration:none; color:black;" target="_blank">lyrics</a></button>
+        </div>
+        <div class="col-md-3">
+  				<a href="#" class="album-poster"  data-switch="17">
+  					<img class="abc"src="https://images-na.ssl-images-amazon.com/images/I/41neFN6j2PL.jpg" alt="">
+  				</a>
+  				<h4>Camila Cabello, Shawn Mendes</h4>
+				  <p>Senorita - 2018</p>
+				  <button class="lbtn"><a href="lyrics/Senorita.html" style="text-decoration:none; color:black;"target="_blank">lyrics</a></button>
+        </div>
+        <div class="col-md-3">
+  				<a href="#" class="album-poster"  data-switch="18">
+  					<img class="abc"src="https://i1.sndcdn.com/artworks-000352463268-5bfny8-t500x500.jpg" alt="">
+  				</a>
+  				<h4>Alec Benjamin</h4>
+				  <p>Let me down slowly - 2018</p>
+				  <button class="lbtn"><a href="lyrics/Let me down slowly.html" style="text-decoration:none; color:black;"target="_blank">lyrics</a></button>
+        </div>
+        <div class="col-md-3">
+  				<a href="#" class="album-poster"  data-switch="19">
+  					<img class="abc"src="https://upload.wikimedia.org/wikipedia/en/e/e2/Gucci_Mane%2C_Bruno_Mars%2C_Kodak_Black_-_Wake_Up_in_the_Sky.png" alt="">
+  				</a>
+  				<h4>Gucci Mane, Bruno Mars, Kodak Black</h4>
+				  <p>Wake up in the sky - 2018</p>
+				  <button class="lbtn"><a href="lyrics/Wake up in the sky.html" style="text-decoration:none; color:black;"target="_blank">lyrics</a></button>
+        </div>
+
+  		</div>
+
+
+<section id="artist">
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Artist</h3>
+        </div>
+        <div class="col-md-2">
+          <a href="#" class="album-poster">
+            <img class="abc"src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Anirudh_Ravichander_at_Audi_Ritz_Style_Awards_2017.jpg" alt="">
+          </a>
+          <h4>Anirudh</h4>
+        </div>
+        <div class="col-md-2">
+          <a href="#" class="album-poster">
+            <img class="abc"src="https://www.thehindu.com/entertainment/music/jwniib/article30388944.ece/alternates/FREE_435/hy23-sidsriram" alt="">
+          </a>
+          <h4>Sid Sriram</h4>
+        </div>
+        <div class="col-md-2">
+          <a href="#" class="album-poster">
+            <img class="abc"src="https://upload.wikimedia.org/wikipedia/commons/a/a4/191125_Shawn_Mendes_at_the_2019_American_Music_Awards.png" alt="">
+          </a>
+          <h4>Shawn Mendes</h4>
+        </div>
+
+        <div class="col-md-2">
+          <a href="#" class="album-poster">
+            <img class="abc"src="https://upload.wikimedia.org/wikipedia/commons/0/02/KS_harisankar.png" alt="">
+          </a>
+          <h4>Hari Shankar</h4>
+        </div>
+        <div class="col-md-2">
+          <a href="#" class="album-poster">
+            <img class="abc"src="https://s3-us-west-2.amazonaws.com/paradigm-media-library/music_artists/alan-walker-20191219.jpg" alt="">
+          </a>
+          <h4>Alan Walker</h4>
+        </div>
+        <div class="col-md-2">
+          <a href="#" class="album-poster">
+            <img class="abc"src="https://fsa.zobj.net/crop.php?r=EW0oqM6TBlYg8A42Wxq5AUqjoyst82rNAYa85Wvc9ThUchnh0xf9BozamKJzrAv1hEAbLhfWNEaTeCSyQVCNF9dh3fIAf9NEHA6QKKJuXF3rCGH-wUpkrFOScFbpm4jcraUAb8fZtEZ0I6x8" alt="">
+          </a>
+          <h4>Shreya Goshal</h4>
+        </div>
+      </div>
+
+</section>
+    </div>
+  </div>
+
+    <div id="aplayer"></div>
+
+</section>
+<section id="footer">
+
+
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="page-footer font-small special-color-dark pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1 crl">
+            <i class="fab fa-facebook-f"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1 crl">
+            <i class="fab fa-twitter"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1 crl">
+            <i class="fab fa-google-plus-g"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1 crl">
+            <i class="fab fa-linkedin-in"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating instagram mx-1 crl">
+            <i class="fab fa-instagram"> </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center">
+
+
+    </div>
+    <div class="footerdiv footer-copyright text-center py-3" style="color:white"> Email:
+      <a href="phpmailer\index.php
+"class="l"> Copyright @ Symphony 2020</a>
+<p></p>
+    </div>
+
+
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+
+  <!-- Footer -->
+  <!-- CSS only -->
+</section>
+<!-- //music script -->
+
+ <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+ <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+ <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+<script src="js/symphony.js"></script>
+
+  </body>
+</html>
